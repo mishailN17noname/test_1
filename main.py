@@ -19,5 +19,6 @@ for file in tqdm(file_list):
     feature_n = list(df[df.columns[0]].values)
     feature_n.append('antibiotic')
     feature_n.append('concetration')
+    print('hello world')
 main_df = pd.DataFrame(data=df_list, columns=feature_n)
 main_df.to_csv('result_milk.csv')
